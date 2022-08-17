@@ -10,14 +10,36 @@
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <nav class="bg-dark">
+    <div class="container d-flex justify-content-between py-4">
+      <h1 class="logo">
+        <a href="index.html">codingHome</a>
+      </h1>
+      <ul class="d-flex list-unstyled align-items-center">
+        <li><a href="#" class="text-light text-decoration-none">首頁</a></li>
+        <li><a href="#" class="text-light text-decoration-none">課程介紹</a></li>
+        <li><a href="#" class="text-light text-decoration-none d-flex align-items-center">
+          <span class="material-symbols-outlined pe-1">
+            account_circle
+          </span>
+          登入
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="special-border d-flex">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="footer bg-dark">
+    <div class="container d-flex justify-content-center align-items-center py-4">
+      <h3 class="font-monospace">Coding Home © 2022 All Rights Reserved</h3>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
