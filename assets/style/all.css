@@ -10428,4 +10428,60 @@ nav {
         height: 85%;
         width: 32px; }
 
+.exclusive {
+  padding: 80px 0px;
+  height: 740px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
+  background-position: center;
+  background-size: cover; }
+  .exclusive .content {
+    margin-top: 80px;
+    width: 925px;
+    height: 429px; }
+    .exclusive .content .box {
+      max-width: 525px;
+      border: 1px solid #7C7E77;
+      border-radius: 24px;
+      position: relative;
+      height: 381px; }
+      .exclusive .content .box img {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        display: block;
+        max-height: 381px;
+        border-radius: 24px; }
+      .exclusive .content .box .change {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 72px);
+        width: 144px;
+        height: 24px; }
+        .exclusive .content .box .change .dot {
+          font-size: 12px; }
+        .exclusive .content .box .change span {
+          color: #62DB54;
+          font-size: 24px; }
+    .exclusive .content .message {
+      padding: 32px;
+      max-width: 416px;
+      border-radius: 24px 24px 24px 0px;
+      position: relative; }
+      .exclusive .content .message h6, .exclusive .content .message .h6 {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold; }
+      .exclusive .content .message p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0; }
+      .exclusive .content .message img {
+        position: absolute;
+        top: -50px;
+        right: 32px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }
+
 /*# sourceMappingURL=all.css.map */
