@@ -5,7 +5,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0");
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&family=Noto+Sans+TC:wght@100&display=swap");
 :root {
   --bs-blue: #0d6efd;
@@ -10259,5 +10259,172 @@ nav {
       padding: 24px 32px;
       border: 1px solid #fff;
       border-radius: 12px; }
+
+.hotCourse {
+  padding: 80px 0px 0px 0px; }
+  .hotCourse .row {
+    gap: 0px 24px;
+    margin-top: 48px; }
+  .hotCourse .col {
+    padding: 0px;
+    border-radius: 24px; }
+    .hotCourse .col .profile {
+      padding: 24px 0px 0px 0px; }
+      .hotCourse .col .profile h3, .hotCourse .col .profile .h3 {
+        font-size: 16px;
+        line-height: 24px; }
+      .hotCourse .col .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }
+    .hotCourse .col h4, .hotCourse .col .h4 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 37px;
+      padding: 0px 24px; }
+    .hotCourse .col .content {
+      padding: 0px 24px; }
+      .hotCourse .col .content h3, .hotCourse .col .content .h3 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #62DB54; }
+      .hotCourse .col .content p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 32px; }
+    .hotCourse .col .price {
+      border-top: 1px solid #fff;
+      padding: 16px 0px; }
+      .hotCourse .col .price span {
+        font-size: 32px;
+        line-height: 37px; }
+    .hotCourse .col:hover {
+      border: 2px solid #62DB54; }
+  .hotCourse .buttonArea {
+    padding: 48px 0px 88px 0px; }
+    .hotCourse .buttonArea .btn {
+      background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+      background: linear-gradient(104deg, #09ACF5, #62DB54);
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px; }
+
+.feature .col:nth-child(1) {
+  padding: 215px 48px;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
+  background-position: center;
+  background-size: cover; }
+
+.feature .col:nth-child(2) {
+  padding: 215px 48px;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
+  background-position: center;
+  background-size: cover; }
+
+.feature .col:nth-child(3) {
+  padding: 215px 48px;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
+  background-position: center;
+  background-size: cover; }
+
+.feature .col:nth-child(4) {
+  padding: 215px 48px;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
+  background-position: center;
+  background-size: cover; }
+
+.feature .col h3, .feature .col .h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold; }
+
+.feature .col p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: .5; }
+
+.feature .col .border-bottom {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 32px; }
+
+.feature .col span {
+  font-size: 36px;
+  opacity: .5; }
+
+.feature .col:hover {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+  background-blend-mode: multiply; }
+  .feature .col:hover p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 1; }
+  .feature .col:hover .border-bottom {
+    width: 70px;
+    height: 3px;
+    background-color: #62DB54;
+    margin-bottom: 32px;
+    -webkit-transition: width 0.2s linear;
+    -o-transition: width 0.2s linear;
+    transition: width 0.2s linear; }
+  .feature .col:hover span {
+    color: #62DB54;
+    opacity: 1; }
+
+.article .row {
+  padding-top: 48px;
+  gap: 0px 24px; }
+
+.article .col {
+  padding: 32px; }
+  .article .col img {
+    max-width: 100%; }
+  .article .col h3, .article .col .h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold; }
+  .article .col p {
+    font-size: 16px;
+    line-height: 24px; }
+  .article .col a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #62DB54; }
+  .article .col:hover {
+    padding: 32px;
+    border: 1px solid #62DB54;
+    border-radius: 12px; }
+    .article .col:hover .box1 {
+      height: 32px;
+      width: 85%; }
+    .article .col:hover .box2 {
+      height: 85%;
+      width: 32px; }
+    .article .col:hover .box3 {
+      height: 32px;
+      width: 85%; }
+    .article .col:hover .box4 {
+      height: 85%;
+      width: 32px; }
 
 /*# sourceMappingURL=all.css.map */
