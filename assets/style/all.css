@@ -10168,6 +10168,13 @@ nav {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover; }
+  .banner .col-6 {
+    padding: 52px 85px;
+    border: 1px solid #FFFFFF; }
+    .banner .col-6 .box {
+      width: 10px;
+      height: 10px;
+      background-color: #fff; }
   .banner h3:nth-child(1), .banner .h3:nth-child(1) {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#09ACF5), to(#62DB54));
     background-image: -o-linear-gradient(top, #09ACF5, #62DB54);
@@ -10483,5 +10490,29 @@ nav {
         width: 100px;
         height: 100px;
         border-radius: 50%; }
+
+.joinUs {
+  padding: 80px 0px; }
+  .joinUs .joinCard {
+    padding: 51px 48px;
+    max-width: 966px;
+    margin: 0 auto;
+    border-radius: 24px; }
+    .joinUs .joinCard span {
+      font-size: 110px;
+      line-height: 80px;
+      margin-right: 48px; }
+    .joinUs .joinCard h3, .joinUs .joinCard .h3 {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: bold; }
+    .joinUs .joinCard p {
+      font-size: 18px;
+      line-height: 26px; }
+    .joinUs .joinCard .btn {
+      font-size: 18px;
+      line-height: 26px;
+      border: 1px solid #fff;
+      padding: 8px 32px; }
 
 /*# sourceMappingURL=all.css.map */
