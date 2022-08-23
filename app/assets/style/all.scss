@@ -2,6 +2,7 @@
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../style/helpers/variables';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+//scss觀念先default會蓋掉後面default(自己版本bs variable要放前面)
 @import '../style/utils/mixin';
 //font、icon
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0");
@@ -12,11 +13,18 @@ nav{
     h1{
         a{
             //a連結圖片會被裁切？
+            width: 110%;
             display:block;
             background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg);
             background-position:center;
             background-size:cover;
             @include hide-text;
+        }
+    }
+    .navbar-toggler{
+        span{
+            color:#62DB54;
+            font-size: 36px;
         }
     }
     ul{
@@ -51,6 +59,18 @@ nav{
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
+    .col-12{
+        @include lg{
+            padding: 52px 85px;
+        }
+        padding: 32px 24px;
+        border: 1px solid #FFFFFF;
+        .box{
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+        }
+    }
     h3:nth-child(1){
         @include gradient-text;
         font-size: 48px;
@@ -76,8 +96,18 @@ nav{
     span,h4,p{
         color:#FFFFFF
     }
+    span{
+        @include gradient-text;
+    }
+    .bg-black{
+        @media(min-width:768px){
+            background-color: #2D2D2D!important;
+        }
+    }
     .col-md-3{
         padding: 52px 24px 48px 24px;
+        border: 1px solid transparent;
+        border-radius: 12px;
         h3{
             @include fz-5;
             font-weight: bold;
@@ -104,19 +134,22 @@ nav{
     .title{
         margin-bottom: 64px;
     }
-    .row{
-        gap: 0px 24px;
-    }
-    .col{
-        border: 1px solid #fff;
-        position: relative;
-        padding: 48px;
-        border-radius: 12px;
+    .col-md-3{
+        // border: 1px solid #fff;
+        // position: relative;
+        // padding: 48px;
+        // border-radius: 12px;
         h3{
             @include fz-4;
         }
         p{
             @include fz-2;
+        }
+        .box{
+            border: 1px solid #fff;
+            position: relative;
+        padding: 48px;
+        border-radius: 12px;
         }
         .num{
             position: absolute;
@@ -148,12 +181,15 @@ nav{
 .hotCourse{
     padding: 80px 0px 0px 0px;
     .row{
-        gap:0px 24px;
+        // gap:0px 24px;
         margin-top: 48px;
     }
-    .col{
-        padding: 0px;
+    .col-md-3{
+        border: 2px solid transparent;
         border-radius: 24px;
+        .box{
+            border-radius: 24px;
+        }
         .profile{
             padding: 24px 0px 0px 0px;
             h3{
@@ -190,6 +226,7 @@ nav{
         }
         &:hover{
             border: 2px solid #62DB54;
+            border-radius: 24px;
         }
     }
     .buttonArea{
@@ -202,7 +239,7 @@ nav{
         }
 }
 .feature{
-    .col:nth-child(1){
+     .col-md-3:nth-child(1){
         padding: 215px 48px;
         height: 100%;
         color:#fff;
@@ -211,8 +248,8 @@ nav{
         background-position:center;
         background-size:cover;
     }
-    .col:nth-child(2){
-        padding: 215px 48px;
+    .col-md-3:nth-child(2){
+        padding: 215px 45px;
         height: 100%;
         color:#fff;
         @include img-mask;
@@ -220,7 +257,7 @@ nav{
         background-position:center;
         background-size:cover;
     }
-    .col:nth-child(3){
+    .col-md-3:nth-child(3){
         padding: 215px 48px;
         height: 100%;
         color:#fff;
@@ -229,7 +266,7 @@ nav{
         background-position:center;
         background-size:cover;
     }
-    .col:nth-child(4){
+    .col-md-3:nth-child(4){
         padding: 215px 48px;
         height: 100%;
         color:#fff;
@@ -238,7 +275,7 @@ nav{
         background-position:center;
         background-size:cover;
     }
-    .col{
+    .col-md-3{
         h3{
             @include fz-4;
             font-weight: bold;
@@ -283,10 +320,11 @@ nav{
     padding: 80px 0px;
     .row{
         padding-top: 48px;
-        gap: 0px 24px;
     }
-    .col{
+    .col-md-4{
         padding: 32px;
+        border: 1px solid transparent;
+        border-radius: 12px;
         img{
             max-width: 100%;
         }
@@ -331,61 +369,67 @@ nav{
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
     background-position:center;
     background-size:cover;
-    .content{
-        margin-top: 80px;
-        width: 925px;
-        height: 429px;
-        .box{
-            max-width: 525px;
-            border: 1px solid #7C7E77;
+    .title{
+        margin-bottom: 48px;
+    }
+    .col-md-5{
+        position: relative;
+        z-index:1;
+        img{
             border-radius: 24px;
-            position: relative;
-            height: 381px;
-            img{
-                position: absolute;
-                top:-10px;
-                left: 10px;
-                display: block;
-                max-height: 381px;
-                border-radius: 24px;
-            }
-            .change{
-                position: absolute;
-                bottom:-28px;
-                left:calc(50% - 72px);
-                width: 144px;
-                height: 24px;
-                .dot{
-                    font-size: 12px;
-                }
-                span{
-                    color:#62DB54;
-                    font-size: 24px;
-                }
-            }
         }
-        .message{
-            padding: 32px;
-            max-width: 416px;
-            border-radius: 24px 24px 24px 0px;
-            position: relative;
-            h6{
-                @include fz-2;
-                font-weight: bold;
-            }
-            p{
-                @include fz-1;
-                margin: 0;
-            }
-            img{
-                position: absolute;
-                top: -50px;
-                right: 32px;
-                display: block;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-            }
+        &::after{
+            position: absolute; /*絕對定位*/
+            content: ""; /*沒有加這段就不會產生偽元素*/
+            width: 100%;
+            height: 100%;
+            border: 1px solid #62DB54;
+            border-radius: 24px;
+            top: 10px;
+            left: -12px;
+            z-index: -1;
+        }
+    }
+    .col-md-4{
+        margin-left: -80px;
+        margin-bottom: -48px; 
+        padding: 32px;
+        border-radius: 24px 24px 24px 0px;
+        z-index: 1;
+        @media (max-width:768px) {
+            margin-top: 40px;
+            margin-left: 0px;
+            margin-bottom:0px; 
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+}
+.joinUs{
+    padding: 80px 0px;
+    .joinCard{
+        padding: 51px 48px;
+        max-width: 966px;
+        margin: 0 auto;
+        border-radius: 24px;
+        span{
+            font-size: 110px;
+            line-height: 80px;
+        }
+        h3{
+            @include fz-5;
+            font-weight: bold;
+        }
+        p{
+            @include fz-2;
+        }
+        .btn{
+            @include fz-2;
+            border: 1px solid #fff;
+            padding: 8px 32px;
         }
     }
 }

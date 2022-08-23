@@ -16,6 +16,18 @@
     background-blend-mode: multiply;
 }
 
+@mixin lg{
+    @media(min-width: 992px){
+        @content;
+    }
+}
+@mixin md{
+    @media(min-width: 768px){
+        @content;
+    }
+}
+
+
 //font-size
 @mixin fz-1{
     font-size: 16px;
