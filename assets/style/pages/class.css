@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* 圖片取代文字技巧 */
+.classCatgory ul {
+  margin: 48px 0px; }
+
+.classCatgory li {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-right: 16px; }
+  .classCatgory li:hover {
+    border: 1px solid #62DB54; }
+    .classCatgory li:hover a {
+      color: #62DB54; }
+  .classCatgory li a {
+    display: block;
+    padding: 16px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff; }
+
+.classCards {
+  padding-left: 0; }
+  .classCards .row {
+    margin-bottom: 32px; }
+  .classCards .classcard {
+    padding: 48px;
+    border-radius: 24px;
+    border: 1px solid transparent; }
+    .classCards .classcard .pic {
+      margin: 0 auto; }
+      .classCards .classcard .pic img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 8px; }
+      .classCards .classcard .pic h3 {
+        font-size: 16px;
+        line-height: 24px; }
+    .classCards .classcard .content h2 {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: bold; }
+    .classCards .classcard .content h3 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #62DB54; }
+    .classCards .classcard .content p {
+      font-size: 16px;
+      line-height: 24px; }
+    .classCards .classcard .price h4 {
+      font-size: 16px;
+      line-height: 24px; }
+    .classCards .classcard .price h3 {
+      font-size: 32px;
+      line-height: 37px; }
+    .classCards .classcard .price a:nth-child(1) {
+      padding: 8px 48px;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      color: #fff;
+      margin-bottom: 8px; }
+    .classCards .classcard .price .btnReserve a {
+      padding: 8px 48px;
+      border-radius: 8px;
+      color: #fff;
+      background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+      background: linear-gradient(104deg, #09ACF5, #62DB54);
+      border: 1px solid transparent;
+      margin-bottom: 8px; }
+
+/*# sourceMappingURL=class.css.map */
