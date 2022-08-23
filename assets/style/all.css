@@ -210,7 +210,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline; }
+  text-decoration: none; }
   a:hover {
     color: var(--bs-link-hover-color); }
 
@@ -2601,7 +2601,6 @@ textarea.form-control-lg {
   line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2950,7 +2949,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
-  text-decoration: underline; }
+  text-decoration: none; }
   .btn-link:focus {
     color: var(--bs-btn-color); }
   .btn-link:hover {
@@ -3233,7 +3232,6 @@ textarea.form-control-lg {
   font-weight: 400;
   color: var(--bs-dropdown-link-color);
   text-align: inherit;
-  text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
@@ -3400,7 +3398,6 @@ textarea.form-control-lg {
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
-  text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
@@ -3545,7 +3542,6 @@ textarea.form-control-lg {
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
-  text-decoration: none;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     color: var(--bs-navbar-brand-hover-color); }
@@ -4332,7 +4328,6 @@ textarea.form-control-lg {
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
   font-size: var(--bs-pagination-font-size);
   color: var(--bs-pagination-color);
-  text-decoration: none;
   background-color: var(--bs-pagination-bg);
   border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4625,7 +4620,6 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
   color: var(--bs-list-group-color);
-  text-decoration: none;
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color); }
   .list-group-item:first-child {
@@ -10136,6 +10130,7 @@ textarea.form-control-lg {
 nav {
   border-bottom: 1px solid #000; }
   nav h1 a, nav .h1 a {
+    width: 110%;
     display: block;
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg);
     background-position: center;
@@ -10143,6 +10138,9 @@ nav {
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden; }
+  nav .navbar-toggler span {
+    color: #62DB54;
+    font-size: 36px; }
   nav ul {
     gap: 48px;
     font-size: 18px;
@@ -10168,10 +10166,13 @@ nav {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover; }
-  .banner .col-6 {
-    padding: 52px 85px;
+  .banner .col-12 {
+    padding: 32px 24px;
     border: 1px solid #FFFFFF; }
-    .banner .col-6 .box {
+    @media (min-width: 992px) {
+      .banner .col-12 {
+        padding: 52px 85px; } }
+    .banner .col-12 .box {
       width: 10px;
       height: 10px;
       background-color: #fff; }
@@ -10203,8 +10204,20 @@ nav {
   padding: 80px 72px; }
   .introduction span, .introduction h4, .introduction .h4, .introduction p {
     color: #FFFFFF; }
+  .introduction span {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#09ACF5), to(#62DB54));
+    background-image: -o-linear-gradient(top, #09ACF5, #62DB54);
+    background-image: linear-gradient(180deg, #09ACF5, #62DB54);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent; }
+  @media (min-width: 768px) {
+    .introduction .bg-black {
+      background-color: #2D2D2D !important; } }
   .introduction .col-md-3 {
-    padding: 52px 24px 48px 24px; }
+    padding: 52px 24px 48px 24px;
+    border: 1px solid transparent;
+    border-radius: 12px; }
     .introduction .col-md-3 h3, .introduction .col-md-3 .h3 {
       font-size: 28px;
       line-height: 40px;
@@ -10231,28 +10244,26 @@ nav {
   background-color: #111; }
   .process .title {
     margin-bottom: 64px; }
-  .process .row {
-    gap: 0px 24px; }
-  .process .col {
+  .process .col-md-3 h3, .process .col-md-3 .h3 {
+    font-size: 24px;
+    line-height: 36px; }
+  .process .col-md-3 p {
+    font-size: 18px;
+    line-height: 26px; }
+  .process .col-md-3 .box {
     border: 1px solid #fff;
     position: relative;
     padding: 48px;
     border-radius: 12px; }
-    .process .col h3, .process .col .h3 {
-      font-size: 24px;
-      line-height: 36px; }
-    .process .col p {
-      font-size: 18px;
-      line-height: 26px; }
-    .process .col .num {
-      position: absolute;
-      top: -30px;
-      left: 40px;
-      font-size: 48px;
-      line-height: 56px;
-      color: #62DB54;
-      background-color: #111;
-      padding: 0px 5px; }
+  .process .col-md-3 .num {
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    font-size: 48px;
+    line-height: 56px;
+    color: #62DB54;
+    background-color: #111;
+    padding: 0px 5px; }
 
 .programs {
   padding: 80px 0px; }
@@ -10270,43 +10281,45 @@ nav {
 .hotCourse {
   padding: 80px 0px 0px 0px; }
   .hotCourse .row {
-    gap: 0px 24px;
     margin-top: 48px; }
-  .hotCourse .col {
-    padding: 0px;
+  .hotCourse .col-md-3 {
+    border: 2px solid transparent;
     border-radius: 24px; }
-    .hotCourse .col .profile {
+    .hotCourse .col-md-3 .box {
+      border-radius: 24px; }
+    .hotCourse .col-md-3 .profile {
       padding: 24px 0px 0px 0px; }
-      .hotCourse .col .profile h3, .hotCourse .col .profile .h3 {
+      .hotCourse .col-md-3 .profile h3, .hotCourse .col-md-3 .profile .h3 {
         font-size: 16px;
         line-height: 24px; }
-      .hotCourse .col .profile img {
+      .hotCourse .col-md-3 .profile img {
         width: 100px;
         height: 100px;
         border-radius: 50%; }
-    .hotCourse .col h4, .hotCourse .col .h4 {
+    .hotCourse .col-md-3 h4, .hotCourse .col-md-3 .h4 {
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 37px;
       padding: 0px 24px; }
-    .hotCourse .col .content {
+    .hotCourse .col-md-3 .content {
       padding: 0px 24px; }
-      .hotCourse .col .content h3, .hotCourse .col .content .h3 {
+      .hotCourse .col-md-3 .content h3, .hotCourse .col-md-3 .content .h3 {
         font-size: 16px;
         line-height: 24px;
         color: #62DB54; }
-      .hotCourse .col .content p {
+      .hotCourse .col-md-3 .content p {
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 32px; }
-    .hotCourse .col .price {
+    .hotCourse .col-md-3 .price {
       border-top: 1px solid #fff;
       padding: 16px 0px; }
-      .hotCourse .col .price span {
+      .hotCourse .col-md-3 .price span {
         font-size: 32px;
         line-height: 37px; }
-    .hotCourse .col:hover {
-      border: 2px solid #62DB54; }
+    .hotCourse .col-md-3:hover {
+      border: 2px solid #62DB54;
+      border-radius: 24px; }
   .hotCourse .buttonArea {
     padding: 48px 0px 88px 0px; }
     .hotCourse .buttonArea .btn {
@@ -10316,7 +10329,7 @@ nav {
       font-size: 18px;
       line-height: 26px; }
 
-.feature .col:nth-child(1) {
+.feature .col-md-3:nth-child(1) {
   padding: 215px 48px;
   height: 100%;
   color: #fff;
@@ -10326,8 +10339,8 @@ nav {
   background-position: center;
   background-size: cover; }
 
-.feature .col:nth-child(2) {
-  padding: 215px 48px;
+.feature .col-md-3:nth-child(2) {
+  padding: 215px 45px;
   height: 100%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
@@ -10336,7 +10349,7 @@ nav {
   background-position: center;
   background-size: cover; }
 
-.feature .col:nth-child(3) {
+.feature .col-md-3:nth-child(3) {
   padding: 215px 48px;
   height: 100%;
   color: #fff;
@@ -10346,7 +10359,7 @@ nav {
   background-position: center;
   background-size: cover; }
 
-.feature .col:nth-child(4) {
+.feature .col-md-3:nth-child(4) {
   padding: 215px 48px;
   height: 100%;
   color: #fff;
@@ -10356,37 +10369,37 @@ nav {
   background-position: center;
   background-size: cover; }
 
-.feature .col h3, .feature .col .h3 {
+.feature .col-md-3 h3, .feature .col-md-3 .h3 {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold; }
 
-.feature .col p {
+.feature .col-md-3 p {
   font-size: 18px;
   line-height: 26px;
   opacity: .5; }
 
-.feature .col .border-bottom {
+.feature .col-md-3 .border-bottom {
   width: 50px;
   height: 3px;
   background-color: #fff;
   margin-bottom: 32px; }
 
-.feature .col span {
+.feature .col-md-3 span {
   font-size: 36px;
   opacity: .5; }
 
-.feature .col:hover {
+.feature .col-md-3:hover {
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition: background-color 0.4s linear;
   -o-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
   background-blend-mode: multiply; }
-  .feature .col:hover p {
+  .feature .col-md-3:hover p {
     font-size: 18px;
     line-height: 26px;
     opacity: 1; }
-  .feature .col:hover .border-bottom {
+  .feature .col-md-3:hover .border-bottom {
     width: 70px;
     height: 3px;
     background-color: #62DB54;
@@ -10394,44 +10407,45 @@ nav {
     -webkit-transition: width 0.2s linear;
     -o-transition: width 0.2s linear;
     transition: width 0.2s linear; }
-  .feature .col:hover span {
+  .feature .col-md-3:hover span {
     color: #62DB54;
     opacity: 1; }
 
 .article {
   padding: 80px 0px; }
   .article .row {
-    padding-top: 48px;
-    gap: 0px 24px; }
-  .article .col {
-    padding: 32px; }
-    .article .col img {
+    padding-top: 48px; }
+  .article .col-md-4 {
+    padding: 32px;
+    border: 1px solid transparent;
+    border-radius: 12px; }
+    .article .col-md-4 img {
       max-width: 100%; }
-    .article .col h3, .article .col .h3 {
+    .article .col-md-4 h3, .article .col-md-4 .h3 {
       font-size: 18px;
       line-height: 26px;
       font-weight: bold; }
-    .article .col p {
+    .article .col-md-4 p {
       font-size: 16px;
       line-height: 24px; }
-    .article .col a {
+    .article .col-md-4 a {
       font-size: 18px;
       line-height: 20px;
       color: #62DB54; }
-    .article .col:hover {
+    .article .col-md-4:hover {
       padding: 32px;
       border: 1px solid #62DB54;
       border-radius: 12px; }
-      .article .col:hover .box1 {
+      .article .col-md-4:hover .box1 {
         height: 32px;
         width: 85%; }
-      .article .col:hover .box2 {
+      .article .col-md-4:hover .box2 {
         height: 85%;
         width: 32px; }
-      .article .col:hover .box3 {
+      .article .col-md-4:hover .box3 {
         height: 32px;
         width: 85%; }
-      .article .col:hover .box4 {
+      .article .col-md-4:hover .box4 {
         height: 85%;
         width: 32px; }
 
@@ -10441,55 +10455,40 @@ nav {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
   background-position: center;
   background-size: cover; }
-  .exclusive .content {
-    margin-top: 80px;
-    width: 925px;
-    height: 429px; }
-    .exclusive .content .box {
-      max-width: 525px;
-      border: 1px solid #7C7E77;
+  .exclusive .title {
+    margin-bottom: 48px; }
+  .exclusive .col-md-5 {
+    position: relative;
+    z-index: 1; }
+    .exclusive .col-md-5 img {
+      border-radius: 24px; }
+    .exclusive .col-md-5::after {
+      position: absolute;
+      /*絕對定位*/
+      content: "";
+      /*沒有加這段就不會產生偽元素*/
+      width: 100%;
+      height: 100%;
+      border: 1px solid #62DB54;
       border-radius: 24px;
-      position: relative;
-      height: 381px; }
-      .exclusive .content .box img {
-        position: absolute;
-        top: -10px;
-        left: 10px;
-        display: block;
-        max-height: 381px;
-        border-radius: 24px; }
-      .exclusive .content .box .change {
-        position: absolute;
-        bottom: -28px;
-        left: calc(50% - 72px);
-        width: 144px;
-        height: 24px; }
-        .exclusive .content .box .change .dot {
-          font-size: 12px; }
-        .exclusive .content .box .change span {
-          color: #62DB54;
-          font-size: 24px; }
-    .exclusive .content .message {
-      padding: 32px;
-      max-width: 416px;
-      border-radius: 24px 24px 24px 0px;
-      position: relative; }
-      .exclusive .content .message h6, .exclusive .content .message .h6 {
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: bold; }
-      .exclusive .content .message p {
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0; }
-      .exclusive .content .message img {
-        position: absolute;
-        top: -50px;
-        right: 32px;
-        display: block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; }
+      top: 10px;
+      left: -12px;
+      z-index: -1; }
+  .exclusive .col-md-4 {
+    margin-left: -80px;
+    margin-bottom: -48px;
+    padding: 32px;
+    border-radius: 24px 24px 24px 0px;
+    z-index: 1; }
+    @media (max-width: 768px) {
+      .exclusive .col-md-4 {
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-bottom: 0px; } }
+    .exclusive .col-md-4 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; }
 
 .joinUs {
   padding: 80px 0px; }
@@ -10500,8 +10499,7 @@ nav {
     border-radius: 24px; }
     .joinUs .joinCard span {
       font-size: 110px;
-      line-height: 80px;
-      margin-right: 48px; }
+      line-height: 80px; }
     .joinUs .joinCard h3, .joinUs .joinCard .h3 {
       font-size: 28px;
       line-height: 40px;
