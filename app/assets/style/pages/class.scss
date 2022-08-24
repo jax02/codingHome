@@ -1,13 +1,14 @@
 @import '../utils/mixin';
 
 .classCatgory{
-    ul{
-        margin: 48px 0px;
-    }
     li{
         border: 1px solid #fff;
         border-radius: 8px;
         margin-right: 16px;
+        // min-width: 130px;
+        a{
+            @include text-nowrap;
+        }
         &:hover{
             border: 1px solid #62DB54;
             a{
@@ -24,11 +25,7 @@
 }
 .classCards{
     padding-left: 0;
-    .row{
-        margin-bottom: 32px;
-    }
     .classcard{
-        padding: 48px;
         border-radius: 24px;
         border: 1px solid transparent;
         .pic{
@@ -39,7 +36,6 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
-                margin-bottom: 8px;
             }   
             h3{
                 @include fz-1;
@@ -57,16 +53,34 @@
             p{
                 @include fz-1;
             }
+            @media (max-width:768px) {
+                margin-top: 24px;
+            }
         }
         .price{
+            @media (max-width:768px) {
+                margin-top: 48px;
+                .time{
+                    margin-bottom: 16px;
+                    h4{
+                        margin-right: 8px;
+                    }
+                }
+            }
             h4{
                 @include fz-1;
             }
             h3{
                 @include fz-6;
             }
+            .btnArea{
+                @media (max-width:768px) {
+                    gap:0px 8px;
+                }
+            }
             a:nth-child(1){
-                padding: 8px 48px;
+                display: block;
+                padding: 8px 10px;
                 border-radius: 8px;
                 border: 1px solid #fff;
                 color:#fff;
@@ -74,7 +88,6 @@
             }
             .btnReserve{
                 a{
-                    padding: 8px 48px;
                     border-radius: 8px;
                     color:#fff;
                     background:linear-gradient(104deg,#09ACF5,#62DB54);

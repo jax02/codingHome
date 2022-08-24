@@ -15,6 +15,11 @@
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
 }
+//文字強迫不換行
+@mixin text-nowrap{
+    word-wrap: normal;
+    white-space:nowrap; 
+}
 
 @mixin lg{
     @media(min-width: 992px){
