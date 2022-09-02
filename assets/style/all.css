@@ -15203,6 +15203,9 @@ nav {
   overflow-x: hidden;
   background-color: #00000058;
   padding: 80px 72px; }
+  @media (max-width: 768px) {
+    .introduction {
+      padding: 80px 16px; } }
   .introduction span, .introduction h4, .introduction .h4, .introduction p {
     color: #FFFFFF; }
   .introduction span {
@@ -15273,10 +15276,10 @@ nav {
   .programs .title {
     margin-bottom: 64px; }
   .programs .programItems .swiper-slide {
+    overflow: hidden;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-right: 16px !important;
-    width: 8% !important;
     text-align: center;
     font-size: 18px;
     line-height: 26px;
@@ -15285,7 +15288,7 @@ nav {
     border-radius: 12px; }
     @media (max-width: 1200px) {
       .programs .programItems .swiper-slide {
-        width: 20% !important; } }
+        width: 110px !important; } }
 
 .hotCourse {
   overflow-x: hidden;
@@ -15418,8 +15421,8 @@ nav {
       opacity: 1; }
 
 .article {
-  overflow-x: hidden;
-  padding: 80px 0px; }
+  overflow: hidden;
+  padding: 80px 16px; }
   .article .row {
     padding-top: 48px; }
   .article .col-md-4 {
