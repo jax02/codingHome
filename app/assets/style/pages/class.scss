@@ -1,5 +1,7 @@
 @import '../utils/mixin';
-
+ol,ul{
+    padding-left: 16px;
+}
 .classCatgory{
     li{
         border: 1px solid #fff;
@@ -24,12 +26,10 @@
     }
 }
 .classCards{
-    padding-left: 0;
     .classcard{
         border-radius: 24px;
         border: 1px solid transparent;
         .pic{
-            // margin-right: 48px;
             margin: 0 auto;
             img{
                 display: block;
