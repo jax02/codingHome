@@ -15418,6 +15418,7 @@ nav {
       opacity: 1; }
 
 .article {
+  overflow-x: hidden;
   padding: 80px 0px; }
   .article .row {
     padding-top: 48px; }
