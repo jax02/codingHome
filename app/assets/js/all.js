@@ -24,3 +24,11 @@ const swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+var swiper2 = new Swiper(".programSwiper", {
+  slidesPerView: 10,
+  spaceBetween: 20,
+  freeMode: true
+});
+

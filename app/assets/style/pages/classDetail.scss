@@ -82,22 +82,22 @@
     }
 }
 .priceChoose{
-    .choose{
-        border-bottom: 1px solid #fff;
-        .btn{
-            span{
-                background: linear-gradient(180deg,#09ACF5,#62DB54);
-                color:#fff;
-                border-radius: 50%;
+        .choose{
+            color:#FFFFFF;
+            .btn{
+                span{
+                    background: linear-gradient(180deg,#09ACF5,#62DB54);
+                    color:#fff;
+                    border-radius: 50%;
+                }
+                border:transparent;
             }
-            border:transparent;
+            &:hover{
+                color:#62DB54;
+            }
         }
-        &:hover{
-            color:#62DB54;
-        }
-    }
-    .choose:nth-last-child(1){
-        border-bottom: transparent;
+    .border-bottom{
+        border-bottom: 1px solid #fff;
     }
 }
 .peopleSee{

@@ -182,13 +182,19 @@ nav{
         margin-bottom: 64px;
     }
     .programItems{
-        gap: 0px 16px;
-        .item{
+        .swiper-slide {
+            box-sizing: border-box;
+            margin-right: 16px !important;
+            width: 8% !important;
+            text-align: center;
             @include fz-2;
-            padding: 24px 32px;
+            padding: 24px 0px;
             border: 1px solid #fff;
             border-radius: 12px;
-        }
+            @media (max-width:1200px) {
+                width: 20% !important;
+            }
+          }
     }
 }
 .hotCourse{
