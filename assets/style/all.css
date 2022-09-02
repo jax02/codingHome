@@ -15122,9 +15122,6 @@ ul {
       font-size: 18px;
       line-height: 26px; }
 
-body {
-  overflow-x: hidden; }
-
 nav {
   border-bottom: 1px solid #000; }
   nav .nav-item {
@@ -15203,6 +15200,7 @@ nav {
   background-color: #62DB54; }
 
 .introduction {
+  overflow-x: hidden;
   background-color: #00000058;
   padding: 80px 72px; }
   .introduction span, .introduction h4, .introduction .h4, .introduction p {
@@ -15243,6 +15241,7 @@ nav {
         color: transparent; }
 
 .process {
+  overflow-x: hidden;
   padding: 80px 0px;
   background-color: #111; }
   .process .title {
@@ -15269,6 +15268,7 @@ nav {
     padding: 0px 5px; }
 
 .programs {
+  overflow-x: hidden;
   padding: 80px 0px; }
   .programs .title {
     margin-bottom: 64px; }
@@ -15288,6 +15288,7 @@ nav {
         width: 20% !important; } }
 
 .hotCourse {
+  overflow-x: hidden;
   padding: 80px 0px 0px 0px; }
   .hotCourse .row {
     margin-top: 48px; }
@@ -15340,87 +15341,81 @@ nav {
         font-size: 18px;
         line-height: 26px; }
 
-.feature .col:nth-child(1) {
-  padding: 215px 48px;
-  height: 100%;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
-  background-position: center;
-  background-size: cover; }
-
-.feature .col:nth-child(2) {
-  padding: 215px 45px;
-  height: 100%;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
-  background-position: center;
-  background-size: cover; }
-
-.feature .col:nth-child(3) {
-  padding: 215px 48px;
-  height: 100%;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
-  background-position: center;
-  background-size: cover; }
-
-.feature .col:nth-child(4) {
-  padding: 215px 48px;
-  height: 100%;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
-  background-position: center;
-  background-size: cover; }
-
-.feature .col h3, .feature .col .h3 {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: bold; }
-
-.feature .col p {
-  font-size: 18px;
-  line-height: 26px;
-  opacity: .5; }
-
-.feature .col .border-bottom {
-  width: 50px;
-  height: 3px;
-  background-color: #fff;
-  margin-bottom: 32px; }
-
-.feature .col span {
-  font-size: 36px;
-  opacity: .5; }
-
-.feature .col:hover {
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: background-color 0.4s linear;
-  -o-transition: background-color 0.4s linear;
-  transition: background-color 0.4s linear;
-  background-blend-mode: multiply; }
-  .feature .col:hover p {
+.feature {
+  overflow-x: hidden; }
+  .feature .col:nth-child(1) {
+    padding: 215px 48px;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
+    background-position: center;
+    background-size: cover; }
+  .feature .col:nth-child(2) {
+    padding: 215px 45px;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
+    background-position: center;
+    background-size: cover; }
+  .feature .col:nth-child(3) {
+    padding: 215px 48px;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
+    background-position: center;
+    background-size: cover; }
+  .feature .col:nth-child(4) {
+    padding: 215px 48px;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
+    background-position: center;
+    background-size: cover; }
+  .feature .col h3, .feature .col .h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold; }
+  .feature .col p {
     font-size: 18px;
     line-height: 26px;
-    opacity: 1; }
-  .feature .col:hover .border-bottom {
-    width: 70px;
+    opacity: .5; }
+  .feature .col .border-bottom {
+    width: 50px;
     height: 3px;
-    background-color: #62DB54;
-    margin-bottom: 32px;
-    -webkit-transition: width 0.2s linear;
-    -o-transition: width 0.2s linear;
-    transition: width 0.2s linear; }
-  .feature .col:hover span {
-    color: #62DB54;
-    opacity: 1; }
+    background-color: #fff;
+    margin-bottom: 32px; }
+  .feature .col span {
+    font-size: 36px;
+    opacity: .5; }
+  .feature .col:hover {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+    background-blend-mode: multiply; }
+    .feature .col:hover p {
+      font-size: 18px;
+      line-height: 26px;
+      opacity: 1; }
+    .feature .col:hover .border-bottom {
+      width: 70px;
+      height: 3px;
+      background-color: #62DB54;
+      margin-bottom: 32px;
+      -webkit-transition: width 0.2s linear;
+      -o-transition: width 0.2s linear;
+      transition: width 0.2s linear; }
+    .feature .col:hover span {
+      color: #62DB54;
+      opacity: 1; }
 
 .article {
   padding: 80px 0px; }
@@ -15461,6 +15456,7 @@ nav {
         width: 32px; }
 
 .feedback {
+  overflow-x: hidden;
   padding: 80px 0px;
   height: 740px;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
@@ -15536,6 +15532,7 @@ nav {
         border-radius: 100px; }
 
 .joinUs {
+  overflow-x: hidden;
   padding: 80px 0px; }
   .joinUs .joinCard {
     padding: 51px 48px;
