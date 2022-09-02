@@ -75,7 +75,7 @@
     background-color: #62DB54; }
 
 .priceChoose .choose {
-  border-bottom: 1px solid #fff; }
+  color: #FFFFFF; }
   .priceChoose .choose .btn {
     border: transparent; }
     .priceChoose .choose .btn span {
@@ -87,8 +87,8 @@
   .priceChoose .choose:hover {
     color: #62DB54; }
 
-.priceChoose .choose:nth-last-child(1) {
-  border-bottom: transparent; }
+.priceChoose .border-bottom {
+  border-bottom: 1px solid #fff; }
 
 .peopleSee .col-md-3 {
   border: 2px solid transparent;
