@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* 圖片取代文字技巧 */
+ol, ul {
+  padding-left: 16px; }
+
 .classCatgory li {
   border: 1px solid #fff;
   border-radius: 8px;
@@ -18,64 +21,62 @@
     line-height: 24px;
     color: #fff; }
 
-.classCards {
-  padding-left: 0; }
-  .classCards .classcard {
-    border-radius: 24px;
-    border: 1px solid transparent; }
-    .classCards .classcard .pic {
-      margin: 0 auto; }
-      .classCards .classcard .pic img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; }
-      .classCards .classcard .pic h3 {
-        font-size: 16px;
-        line-height: 24px; }
-    .classCards .classcard .content h2 {
-      font-size: 24px;
-      line-height: 36px;
-      font-weight: bold; }
-    .classCards .classcard .content h3 {
-      font-size: 16px;
-      line-height: 24px;
-      color: #62DB54; }
-    .classCards .classcard .content p {
-      font-size: 16px;
-      line-height: 24px; }
-    @media (max-width: 768px) {
-      .classCards .classcard .content {
-        margin-top: 24px; } }
-    @media (max-width: 768px) {
-      .classCards .classcard .price {
-        margin-top: 48px; }
-        .classCards .classcard .price .time {
-          margin-bottom: 16px; }
-          .classCards .classcard .price .time h4 {
-            margin-right: 8px; } }
-    .classCards .classcard .price h4 {
-      font-size: 16px;
-      line-height: 24px; }
-    .classCards .classcard .price h3 {
-      font-size: 32px;
-      line-height: 37px; }
-    @media (max-width: 768px) {
-      .classCards .classcard .price .btnArea {
-        gap: 0px 8px; } }
-    .classCards .classcard .price a:nth-child(1) {
+.classCards .classcard {
+  border-radius: 24px;
+  border: 1px solid transparent; }
+  .classCards .classcard .pic {
+    margin: 0 auto; }
+    .classCards .classcard .pic img {
       display: block;
-      padding: 8px 10px;
-      border-radius: 8px;
-      border: 1px solid #fff;
-      color: #fff;
-      margin-bottom: 8px; }
-    .classCards .classcard .price .btnReserve a {
-      border-radius: 8px;
-      color: #fff;
-      background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
-      background: linear-gradient(104deg, #09ACF5, #62DB54);
-      border: 1px solid transparent;
-      margin-bottom: 8px; }
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; }
+    .classCards .classcard .pic h3 {
+      font-size: 16px;
+      line-height: 24px; }
+  .classCards .classcard .content h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold; }
+  .classCards .classcard .content h3 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #62DB54; }
+  .classCards .classcard .content p {
+    font-size: 16px;
+    line-height: 24px; }
+  @media (max-width: 768px) {
+    .classCards .classcard .content {
+      margin-top: 24px; } }
+  @media (max-width: 768px) {
+    .classCards .classcard .price {
+      margin-top: 48px; }
+      .classCards .classcard .price .time {
+        margin-bottom: 16px; }
+        .classCards .classcard .price .time h4 {
+          margin-right: 8px; } }
+  .classCards .classcard .price h4 {
+    font-size: 16px;
+    line-height: 24px; }
+  .classCards .classcard .price h3 {
+    font-size: 32px;
+    line-height: 37px; }
+  @media (max-width: 768px) {
+    .classCards .classcard .price .btnArea {
+      gap: 0px 8px; } }
+  .classCards .classcard .price a:nth-child(1) {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 8px; }
+  .classCards .classcard .price .btnReserve a {
+    border-radius: 8px;
+    color: #fff;
+    background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+    background: linear-gradient(104deg, #09ACF5, #62DB54);
+    border: 1px solid transparent;
+    margin-bottom: 8px; }
 
 /*# sourceMappingURL=class.css.map */
