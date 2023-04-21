@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <!-- codemirror -->
+    <script src="../app/codemirror-5.65.8/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../app/codemirror-5.65.8/lib/codemirror.css" />
+    <script src="../app/codemirror-5.65.8/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="../app/codemirror-5.65.8/theme/darcula.css" />
   </head>
 
   <body>
-    <header class="header bg-light3 sticky-top">
+    <header class="header bg-light3">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand fs-2 fw-bold" href="index.html"
@@ -36,28 +41,31 @@
                 <a
                   class="nav-link fs-5 fw-bold btn-0 btn-5"
                   aria-current="page"
-                  href="#about"
+                  href="#"
                   >介紹</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="#step"
-                  >如何使用</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="course.html"
+                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="#"
                   >課程預覽</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="course.html"
-                  >排行榜</a
+                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="#"
+                  >課程預覽</a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold btn-0 btn-5" href="#">排行榜</a>
               </li>
             </ul>
             <div class="btnArea">
-              <a href="#top" class="py-1 px-3 btn-0 btn-5">新增使用者</a>
+              <!-- <a href="#" class="text-light fs-5 bg-gradient fw-semibold register text-decoration-none py-1 px-3 rounded-pill me-3">註冊</a> -->
+              <a
+                href="login.html"
+                class="text-light fs-5 bg-gradient fw-semibold login text-decoration-none py-1 px-3 rounded-pill"
+                >登入</a
+              >
             </div>
           </div>
         </div>
@@ -66,19 +74,13 @@
 
     <%- contents %>
 
-    <footer class="footer bg-dark py-2">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div></div>
-        <div class="content text-light fw-semibold">
-          ⓒ 2022 僅供練習使用，無商業用途
-        </div>
-        <div class="admin">
-          <a href="#" class="btn text-light border py-1 px-3 rounded-2"
-            >後臺管理</a
-          >
-        </div>
-      </div>
-    </footer>
+    <!-- <footer class="footer bg-dark py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div></div>
+      <div class="content text-light fw-semibold">ⓒ 2022 僅供練習使用，無商業用途</div>
+      <div class="admin"><a href="#" class="btn text-light border py-1 px-3 rounded-2">後臺管理</a></div>
+    </div>
+  </footer> -->
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script

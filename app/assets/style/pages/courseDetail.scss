@@ -1,0 +1,32 @@
+.border-bottom{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #111;
+}
+.title{
+    p{
+        img{
+            display: block;
+            max-width: 360px;
+        }
+    }
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.example-img{
+    .col{
+        img{
+            &:hover{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+        }
+    }
+}
+.col{
+    img{
+        max-width: 360px;
+    }
+}

@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@uiball/loaders": "^1.2.6",
     "autoprefixer": "^9.6.0",
     "bootstrap": "^5.2.0",
     "browser-sync": "^2.26.7",
@@ -37,9 +38,11 @@
     "gulp-sourcemaps": "^2.6.5",
     "hover.css": "^2.3.2",
     "jquery": "^3.5.1",
+    "loaders.css": "^0.1.2",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "pure-css-loader": "^3.3.3"
   },
   "repository": {
     "type": "git",
