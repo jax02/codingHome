@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* 圖片取代文字技巧 */
+.loader {
+  color: #fff;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 999999; }
+
+.loader:after,
+.loader:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none; }
+
+.loader.is-active {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+.loader.is-active:after,
+.loader.is-active:before {
+  display: block; }
+
+.loader-curtain:after,
+.loader-curtain:before {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  margin-top: -35px;
+  font-size: 150px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  line-height: 1.5;
+  content: "Loading..."; }
+
+.loader-curtain:before {
+  color: #666; }
+
+.loader-curtain:after {
+  color: #fff;
+  height: 0;
+  -webkit-animation: curtain 1s linear infinite alternate both;
+          animation: curtain 1s linear infinite alternate both; }
+
+.loader-curtain[data-curtain-text]:not([data-curtain-text=""]):after,
+.loader-curtain[data-curtain-text]:not([data-curtain-text=""]):before {
+  content: attr(data-curtain-text); }
+
+.loader-curtain[data-brazilian]:before {
+  color: #EB9C37; }
+
+.loader-curtain[data-brazilian]:after {
+  color: #DD4C57; }
+
+.loader-curtain[data-colorful]:before {
+  -webkit-animation: maskColorful 2s linear infinite alternate both;
+          animation: maskColorful 2s linear infinite alternate both; }
+
+.loader-curtain[data-colorful]:after {
+  -webkit-animation: curtain 1s linear infinite alternate both, maskColorful-front 2s 1s linear infinite alternate both;
+          animation: curtain 1s linear infinite alternate both, maskColorful-front 2s 1s linear infinite alternate both;
+  color: #000; }
+
+@-webkit-keyframes maskColorful {
+  0% {
+    color: #3498db; }
+  49.5% {
+    color: #3498db; }
+  50.5% {
+    color: #e74c3c; }
+  to {
+    color: #e74c3c; } }
+
+@keyframes maskColorful {
+  0% {
+    color: #3498db; }
+  49.5% {
+    color: #3498db; }
+  50.5% {
+    color: #e74c3c; }
+  to {
+    color: #e74c3c; } }
+
+@-webkit-keyframes maskColorful-front {
+  0% {
+    color: #2ecc71; }
+  49.5% {
+    color: #2ecc71; }
+  50.5% {
+    color: #f1c40f; }
+  to {
+    color: #f1c40f; } }
+
+@keyframes maskColorful-front {
+  0% {
+    color: #2ecc71; }
+  49.5% {
+    color: #2ecc71; }
+  50.5% {
+    color: #f1c40f; }
+  to {
+    color: #f1c40f; } }
+
+@-webkit-keyframes curtain {
+  0% {
+    height: 0; }
+  to {
+    height: 200px; } }
+
+@keyframes curtain {
+  0% {
+    height: 0; }
+  to {
+    height: 200px; } }
+
+.navbar-brand .logo {
+  background-image: -o-linear-gradient(350deg, #EB9C37, #DD4C57);
+  background-image: linear-gradient(100deg, #EB9C37, #DD4C57);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent; }
+
+.btnArea .btn-0, .navbar-nav .btn-0 {
+  color: #EB9C37;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 !important;
+  line-height: 45px;
+  max-width: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; }
+  @media (min-width: 600px) {
+    .btnArea .btn-0, .navbar-nav .btn-0 {
+      margin: 0 1em 2em; } }
+  .btnArea .btn-0:hover, .navbar-nav .btn-0:hover {
+    text-decoration: none; }
+
+.btn-5 {
+  border: 1px solid transparent;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: #EB9C37;
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.btn-5:hover {
+  border: 1px solid;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #EB9C37; }
+
+/*# sourceMappingURL=header.css.map */
