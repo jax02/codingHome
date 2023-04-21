@@ -46,10 +46,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jax02/codingHome.git"
+    "url": "git+https://github.com/jax02/canvasLearning.git"
   },
   "bugs": {
-    "url": "https://github.com/jax02/codingHome/issues"
+    "url": "https://github.com/jax02/canvasLearning/issues"
   },
-  "homepage": "https://github.com/jax02/codingHome#readme"
+  "homepage": "https://github.com/jax02/canvasLearning#readme"
 }
